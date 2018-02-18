@@ -18,6 +18,8 @@ func Init() {
 
 	// register routes
 	o.Register("get", "/", func(w http.ResponseWriter, r *http.Request) error {
+		w.Header().Set("cache-control", "public, max-age=3")
+
 		return tIndex.Execute(w, map[string]interface{}{
 			"Now": time.Now().String(),
 		})
