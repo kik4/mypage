@@ -4,10 +4,8 @@ package server
 
 import (
 	"net/http"
-
-	"github.com/kikkikkikkik/ocelot"
 )
 
-func start(o *ocelot.Ocelot) {
-	http.Handle("/", o)
+func start(h http.Handler) {
+	http.Handle("/", h)
 }

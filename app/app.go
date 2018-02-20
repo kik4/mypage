@@ -9,7 +9,7 @@
 package app
 
 import (
-	"bitbucket.org/kikkikkikkik/mypage/server"
+	"github.com/kikkikkikkik/mypage/server"
 )
 
 func init() {

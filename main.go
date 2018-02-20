@@ -6,7 +6,7 @@
 package main
 
 import (
-	"bitbucket.org/kikkikkikkik/mypage/server"
+	"github.com/kikkikkikkik/mypage/server"
 )
 
 func main() {

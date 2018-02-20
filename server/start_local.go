@@ -2,10 +2,8 @@
 
 package server
 
-import (
-	"github.com/kikkikkikkik/ocelot"
-)
+import "net/http"
 
-func start(o *ocelot.Ocelot) {
-	o.Start(":8080")
+func start(h http.Handler) {
+	http.ListenAndServe(":8080", h)
 }
