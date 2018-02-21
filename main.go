@@ -6,7 +6,7 @@
 package main
 
 import (
-	"github.com/kikkikkikkik/mypage/server"
+	"github.com/kik4/mypage/server"
 )
 
 func main() {
