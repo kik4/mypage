@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>iOS挙動サンプル</title>
+</head>
+
+<body>
+    <p>input</p>
+    <input type="text" id="dist" />
+    <button onclick="go()">go</button>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <p>space 1</p>
+    <input type="hidden" id="src" value="hoge" />
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <p>space 2</p>
+    <input type="text" id="src2" value="hoge2" />
+    <button onclick="go2()">go2</button>
+</body>
+
+<script>
+    console.log('start');
+
+    function go() {
+        console.log('go');
+
+        var value = document.getElementById("src").value;
+        console.log(value);
+
+        document.getElementById('dist').value = value;
+
+        console.log('done');
+    }
+
+    function go2() {
+        console.log('go2');
+
+        var value = document.getElementById("src2").value;
+        console.log(value);
+
+        document.getElementById('dist').value = value;
+
+        console.log('done');
+    }
+</script>
+
+</html>
